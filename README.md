@@ -10,16 +10,16 @@ An RNA-Seq pipeline written in NextFlow and ready for deployment in the cloud (A
 - Has Ubuntu with STAR, FastQC, and STAR genome files (GRCh38)
 
 ## Running the script
-- Set up your folders like:
-    |-- Your working folder
-    |   |-- output
-    |   |-- input
-    |       |-- rnaseq.nf
-    |       |-- fastq
-    |           |-- sample1_R1.fastq
-    |           |-- sample1_R2.fastq
-    |           |-- sample2_R1.fastq
-    |           |-- sample2_R2.fastq
+- Set up your folders like:<br>
+├─ Your working folder<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;├─ output<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;├─ input<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- rnaseq.nf<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- fastq<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- sample1_R1.fastq<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- sample1_R2.fastq<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- sample2_R1.fastq<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- sample2_R2.fastq<br>
 
 - Run Docker: docker -it -v /path/to/input:/input -v  /path/to/output:/output rnaseq
 - In the docker container, cd to /input: "cd /input"
