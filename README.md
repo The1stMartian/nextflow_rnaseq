@@ -31,6 +31,4 @@ An RNA-Seq pipeline written in NextFlow and ready for deployment in the cloud (A
 ## Building the Docker container from scratch
 - Build the human genome using STAR. This takes several hours.
 - Download the nextflow binary file
-- Modify the dockerfile:
-|&nbsp;&nbsp;&nbsp;&nbsp;├- include the genome folder in the dockerfile under "ADD path/to/genome /genomeFiles/hg38"
-|&nbsp;&nbsp;&nbsp;&nbsp;├- include the nextflow binary path "ADD path/to/nextflow /usr/bin"
+- Modify the dockerfile to include the genome folder and nextflow file: "ADD path/to/genome /genomeFiles/hg38" and "ADD path/to/nextflow /usr/bin"
