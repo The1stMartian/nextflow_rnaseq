@@ -29,6 +29,8 @@ A simple RNA-Seq pipeline written in NextFlow and for local deployment via Docke
         - the output files will be written to the /output folder
 
 ## Building the Docker container from scratch
-- Build the human genome using STAR. This takes several hours.
-- Download the nextflow binary file
-- Modify the dockerfile to include the genome folder and nextflow file: "ADD path/to/genome /genomeFiles/hg38" and "ADD path/to/nextflow /usr/bin"
+- Prior to building the docker container:
+- Download the HG38 genome files from NCBI and build the human genome using STAR. (Can take several hours.)
+- Download the nextflow binary to a local directory (curl -s https://get.nextflow.io | bash)
+- Modify the dockerfile to specify the path to your local folders containing the NextFlow binary and genome files: "ADD path/to/genomeFolder /genomeFiles/hg38" and "ADD path/to/NextFlowBinary /usr/bin". These commands will add NextFlow to a location on the path and place the genome in the correct location for STAR.
+- Then build the docker container with "docker build -t <name> ."
