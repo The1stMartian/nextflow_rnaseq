@@ -1,5 +1,5 @@
 # NextFlow RNA-Seq Pipeline 
-An RNA-Seq pipeline written in NextFlow and ready for deployment in the cloud (AWS/Docker)
+A simple RNA-Seq pipeline written in NextFlow and for local deployment via Docker
 
 ## Pipeline
 - Runs FastQC
