@@ -25,8 +25,8 @@ A simple RNA-Seq pipeline written in NextFlow and for local deployment via Docke
 - In the docker container, cd to /input: "cd /input"
 - Run the nextflow pipeline: "nextflow -log /output/myRun.log run rnaSeq.nf"
     Notes:<br> 
-        - the -log command ensures that the nextflow log files are written to the out folder
-        - the output files will be written to the /output folder
+        - the -log command ensures that the nextflow log files are written to the out folder<br>
+        - the output files will be written to the /output folder<br>
 
 ## Building the Docker container from scratch
 - Prior to building the docker container:
